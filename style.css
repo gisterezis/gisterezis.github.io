@@ -420,6 +420,10 @@ li {
     justify-content: space-around;
   }
 
+  .contact_mail{
+    font-size: 1rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -628,6 +632,10 @@ li {
     margin: 50px;
     font-size: 1.5rem;
     line-height: 3rem;
+  }
+
+  .contact_mail{
+    font-size: 1.5rem;
   }
 
   .foot_text {

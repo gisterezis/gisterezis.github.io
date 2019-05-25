@@ -256,13 +256,14 @@ li {
   font-family: 'Playfair Display', serif;
   text-align: center;
   color: lavender;
-  margin: 50px;
+  margin: 30px;
   font-size: 1rem;
   line-height: 2rem;
 }
 
 .contact_mail{
   color: lavender;
+  font-size: 0.7rem;
 }
 
 .foot {

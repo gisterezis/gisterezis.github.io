@@ -163,6 +163,17 @@ li {
   padding: 2%;
 }
 
+.gallery2 {
+  vertical-align: top;
+  width: 79%;
+  /* height: 22%; */
+  /* height: 70vw; */
+  margin: 0px 15%;
+  overflow: hidden;
+  overflow: fill;
+  padding: 2%;
+}
+
 .work {
   display: flex;
   flex-wrap: wrap;
@@ -287,12 +298,12 @@ li {
   width: 80vw;
   height: 80vh;
   padding: 2% 5% 2% 5%;
-  border: 4px groove red;
+  border: 4px groove aqua;
   margin-left: 5%;
 }
 
 .page_img {
-  border: 4px groove red;
+  border: 4px groove aqua;
   width: 80vw;
   height: 80vh;
 }
@@ -301,12 +312,12 @@ li {
   width: 30vw;
   height: 55vh;
   padding: 2% 5% 2% 5%;
-  border: 4px groove red;
+  border: 4px groove aqua;
   margin-left: 30%;
 }
 
 .page_img_book {
-  border: 4px groove red;
+  border: 4px groove aqua;
   width: 30vw;
   height: 55vh;
 }
@@ -557,7 +568,7 @@ li {
     position: relative;
     width: 364px;
     height: 204px;
-    border: 3px inset red;
+    border: 3px inset aqua;
     top: -4px;
     left: -30px;
   }
@@ -566,7 +577,7 @@ li {
     position: relative;
     width: 190px;
     height: 340px;
-    border: 3px inset red;
+    border: 3px inset aqua;
     margin-top: 0px;
   }
 
@@ -595,12 +606,12 @@ li {
     width: 80vw;
     height: 80vh;
     padding: 2% 5% 2% 5%;
-    border: 4px groove red;
+    border: 4px groove aqua;
     margin-left: 5%;
   }
 
   .page_img {
-    border: 4px groove red;
+    border: 4px groove aqua;
     width: 80vw;
     height: 80vh;
   }
@@ -609,12 +620,12 @@ li {
     width: 30vw;
     height: 85vh;
     padding: 2% 5% 2% 5%;
-    border: 4px groove red;
+    border: 4px groove aqua;
     margin-left: 30%;
   }
 
   .page_img_book {
-    border: 4px groove red;
+    border: 4px groove aqua;
     width: 30vw;
     height: 85vh;
   }

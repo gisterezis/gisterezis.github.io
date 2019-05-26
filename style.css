@@ -1,5 +1,5 @@
-html,
-body {
+.html_class, .body_class
+{
   margin: 0 0 0 0;
   margin-right: 0%;
   height: 100vh;
@@ -9,6 +9,16 @@ body {
   background-color: #121811;
   overflow: auto;
 }
+
+.body_new_page, .html_new_page {
+  height: 100vh;
+  margin: 0 0 0 0;
+  margin-right: 0%;
+  /* width: 100%; */
+  background-color: #121811;
+  overflow: auto;
+}
+
 
 .site_header {
   height: 100%;
@@ -301,10 +311,19 @@ li {
   font-size: 0.7rem;
 }
 
-.foot {
+.index_foot{
   margin: 50px 0 0 0;
   width: 99vw;
   background-color: #000;
+}
+
+.foot {
+  position: relative;
+  margin: 50px 0 0 0;
+  width: 99vw;
+  background-color: #000;
+  bottom: 0px;
+  z-index: -1;
 }
 
 .foot_text {
@@ -325,7 +344,7 @@ li {
 
 .new_page_img {
   width: 80vw;
-  height: 80vh;
+  /* height: 80vh; */
   padding: 2% 5% 2% 5%;
   border: 4px groove aqua;
   margin-left: 5%;
@@ -334,21 +353,21 @@ li {
 .page_img {
   border: 4px groove aqua;
   width: 80vw;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .new_page_img_book {
-  width: 30vw;
-  height: 55vh;
+  width: 50vw;
+  /* height: 55vh; */
   padding: 2% 5% 2% 5%;
   border: 4px groove aqua;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .page_img_book {
   border: 4px groove aqua;
-  width: 30vw;
-  height: 55vh;
+  width: 50vw;
+  /* height: 55vh; */
 }
 
 
@@ -478,6 +497,20 @@ li {
 
   .contact_mail{
     font-size: 1rem;
+  }
+
+  .new_page_img_book {
+    width: 30vw;
+    /* height: 85vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 28%;
+  }
+
+  .page_img_book {
+    border: 4px groove aqua;
+    width: 30vw;
+    /* height: 85vh; */
   }
 
 }
@@ -691,36 +724,6 @@ li {
     justify-content: space-around;
   }
 
-  /* страницы изображений */
-
-  .new_page_img {
-    width: 80vw;
-    height: 80vh;
-    padding: 2% 5% 2% 5%;
-    border: 4px groove aqua;
-    margin-left: 5%;
-  }
-
-  .page_img {
-    border: 4px groove aqua;
-    width: 80vw;
-    height: 80vh;
-  }
-
-  .new_page_img_book {
-    width: 30vw;
-    height: 85vh;
-    padding: 2% 5% 2% 5%;
-    border: 4px groove aqua;
-    margin-left: 30%;
-  }
-
-  .page_img_book {
-    border: 4px groove aqua;
-    width: 30vw;
-    height: 85vh;
-  }
-
   .head_logo {
     position: relative;
     width: 150px;
@@ -748,6 +751,38 @@ li {
   .foot_contact_mail{
     font-size: 1.2rem;
   }
+
+  /* страницы изображений */
+
+  .new_page_img {
+    width: 70vw;
+    /* height: 80vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 15%;
+  }
+
+  .page_img {
+    border: 4px groove aqua;
+    width: 70vw;
+    /* height: 80vh; */
+  }
+
+  .new_page_img_book {
+    width: 30vw;
+    /* height: 85vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 30%;
+  }
+
+  .page_img_book {
+    border: 4px groove aqua;
+    width: 30vw;
+    /* height: 85vh; */
+  }
+
+
 }
 
 @media (min-width: 1400px) {
@@ -755,5 +790,33 @@ li {
     position: relative;
     width: 150px;
     top: -10px;
+  }
+
+  .new_page_img {
+    width: 60vw;
+    /* height: 80vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 15%;
+  }
+
+  .page_img {
+    border: 4px groove aqua;
+    width: 60vw;
+    /* height: 80vh; */
+  }
+
+  .new_page_img_book {
+    width: 25vw;
+    /* height: 85vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 30%;
+  }
+
+  .page_img_book {
+    border: 4px groove aqua;
+    width: 25vw;
+    /* height: 85vh; */
   }
 }

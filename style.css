@@ -178,7 +178,15 @@ li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.work2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -224,6 +232,22 @@ li {
   display: inline-block;
   width: 110px;
   height: 200px;
+  border-radius: 5%;
+  background-color: gray;
+}
+
+.img_progress {
+  display: inline-block;
+  width: 166px;
+  height: 120px;
+  border-radius: 5%;
+  background-color: gray;
+}
+
+.img_progress_book {
+  display: inline-block;
+  width: 120px;
+  height: 166px;
   border-radius: 5%;
   background-color: gray;
 }
@@ -290,6 +314,11 @@ li {
   margin: 50px 0 0 0;
   font-size: 1rem;
   line-height: 1rem;
+}
+
+.foot_contact_mail{
+  color: lavender;
+  font-size: 0.7rem;
 }
 
 /* страницы изображений */
@@ -412,6 +441,22 @@ li {
     height: 275px;
   }
 
+  .img_progress {
+    display: inline-block;
+    width: 209px;
+    height: 150px;
+    border-radius: 5%;
+    background-color: gray;
+  }
+  
+  .img_progress_book {
+    display: inline-block;
+    width: 150px;
+    height: 209px;
+    border-radius: 5%;
+    background-color: gray;
+  }
+
   .gallery_info {
     font-size: 1.2rem;
   }
@@ -496,8 +541,18 @@ li {
     border: 4px double black;
     overflow: hidden;
     animation: border_about 5s infinite;
-    overflow: fill;
-    padding: 2%;
+
+    /* padding: 2%; */
+  }
+
+  .gallery2 {
+    vertical-align: top;
+    /* width: 79vw; */
+    width: 100%;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .img_page_about {
@@ -555,19 +610,36 @@ li {
 
   .img_genre {
     width: 300px;
-    height: 140px;
+    height: 150px;
   }
 
   .img_genre_book {
-    width: 140px;
+    width: 150px;
     height: 300px;
     margin-top: 50px;
+  }
+
+  .img_progress {
+    display: inline-block;
+    width: 209px;
+    height: 150px;
+    border-radius: 5%;
+    background-color: gray;
+  }
+  
+  .img_progress_book {
+    display: inline-block;
+    width: 150px;
+    height: 209px;
+    border-radius: 5%;
+    background-color: gray;
+    justify-content: space-around;
   }
 
   .img_genre:hover {
     position: relative;
     width: 364px;
-    height: 204px;
+    height: 184px;
     border: 3px inset aqua;
     top: -4px;
     left: -30px;
@@ -579,6 +651,25 @@ li {
     height: 340px;
     border: 3px inset aqua;
     margin-top: 0px;
+  }
+
+  .img_progress:hover {
+    position: relative;
+    width: 253px;
+    height: 194px;
+    border-radius: 5%;
+    border: 3px inset aqua;
+    background-color: gray;
+  }
+  
+  .img_progress_book:hover {
+    display: inline-block;
+    width: 194px;
+    height: 253px;
+    border-radius: 5%;
+    border: 3px inset aqua;
+    background-color: gray;
+    justify-content: space-around;
   }
 
   .gallery_info {
@@ -652,6 +743,10 @@ li {
   .foot_text {
     font-size: 1.2rem;
     line-height: 2rem;
+  }
+
+  .foot_contact_mail{
+    font-size: 1.2rem;
   }
 }
 

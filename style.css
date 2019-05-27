@@ -201,7 +201,7 @@ li {
 }
 
 .gallery_text {
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
   font-family: "Marck Script", cursive;
   line-height: 1.5rem;
   text-align: center;
@@ -370,7 +370,55 @@ li {
   /* height: 55vh; */
 }
 
+/* страницы жанров */
 
+.content_gallery_page_genre {
+  display: inline-block;
+  width: 300px;
+  margin: 40px 10px 10px 10px;
+  padding: auto;
+  justify-content: space-around;
+}
+
+.gallery_text_page_genre{
+  text-align: left;
+  color: lavender;
+  font-size: 1rem;
+  /* margin-left: 20%; */
+}
+
+.img_genre_page_genre{
+  display: inline-block;
+  width: 200px;
+  border-radius: 5%;
+  background-color: gray;
+}
+
+.img_gallery_page_genre {
+  display: inline-block;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 5%;
+  background-color: gray;
+  margin: 5px;
+  justify-content: space-around;
+}
+
+.gallery_text_page_genre2 {
+  font-size: 1.5rem;
+  font-family: "Marck Script", cursive;
+  line-height: 1.5rem;
+  text-align: center;
+  color: lavender;
+}
+
+.work_page_gente {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
 
 
 
@@ -512,6 +560,26 @@ li {
     width: 30vw;
     /* height: 85vh; */
   }
+
+  /* страница жанров */
+
+  .img_genre_page_genre{
+    display: inline-block;
+    width: 225px;
+    border-radius: 5%;
+    background-color: gray;
+  }
+  
+  .img_gallery_page_genre {
+    display: inline-block;
+    width: 225px;
+    border: 3px solid black;
+    border-radius: 5%;
+    background-color: gray;
+
+    justify-content: space-around;
+  }
+  
 
 }
 
@@ -782,6 +850,22 @@ li {
     /* height: 85vh; */
   }
 
+  /* страница жанров */
+
+  .img_genre_page_genre{
+    display: inline-block;
+    width:  250px;
+    border-radius: 5%;
+    background-color: gray;
+  }
+  
+  .img_gallery_page_genre {
+    display: inline-block;
+    width: 250px;
+    justify-content: space-between;
+    /* border-color: red; */
+    background-color: none;
+  }
 
 }
 

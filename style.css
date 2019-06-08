@@ -1,5 +1,5 @@
-.html_class, .body_class
-{
+.html_class,
+.body_class {
   margin: 0 0 0 0;
   margin-right: 0%;
   height: 100vh;
@@ -10,7 +10,8 @@
   overflow: auto;
 }
 
-.body_new_page, .html_new_page {
+.body_new_page,
+.html_new_page {
   height: 100vh;
   margin: 0 0 0 0;
   margin-right: 0%;
@@ -18,7 +19,6 @@
   background-color: #121811;
   overflow: auto;
 }
-
 
 .site_header {
   height: 100%;
@@ -298,7 +298,7 @@ li {
 }
 
 .contact_text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   color: lavender;
   margin: 30px;
@@ -306,12 +306,12 @@ li {
   line-height: 2rem;
 }
 
-.contact_mail{
+.contact_mail {
   color: lavender;
   font-size: 0.7rem;
 }
 
-.index_foot{
+.index_foot {
   margin: 50px 0 0 0;
   width: 99vw;
   background-color: #000;
@@ -327,7 +327,7 @@ li {
 }
 
 .foot_text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   color: lavender;
   margin: 50px 0 0 0;
@@ -335,7 +335,7 @@ li {
   line-height: 1rem;
 }
 
-.foot_contact_mail{
+.foot_contact_mail {
   color: lavender;
   font-size: 0.7rem;
 }
@@ -383,17 +383,18 @@ li {
   border: 3px solid black;
 }
 
-.gallery_text_page_genre{
+.gallery_text_page_genre {
   text-align: left;
   color: lavender;
   font-size: 1rem;
   margin-left: 8%;
 }
 
-.img_genre_page_genre{
+.img_genre_page_genre {
   display: inline-block;
   width: 200px;
   border-radius: 5%;
+  border: 3px solid #121811;
   margin-left: 8%;
   background-color: gray;
 }
@@ -423,8 +424,6 @@ li {
   justify-content: space-evenly;
   align-items: center;
 }
-
-
 
 @media (min-width: 768px) {
   .fix_head {
@@ -519,7 +518,7 @@ li {
     border-radius: 5%;
     background-color: gray;
   }
-  
+
   .img_progress_book {
     display: inline-block;
     width: 150px;
@@ -547,7 +546,7 @@ li {
     justify-content: space-around;
   }
 
-  .contact_mail{
+  .contact_mail {
     font-size: 1rem;
   }
 
@@ -567,13 +566,20 @@ li {
 
   /* страница жанров */
 
-  .img_genre_page_genre{
+  .img_genre_page_genre {
     display: inline-block;
     width: 225px;
+    border: 3px solid #121811;
     border-radius: 5%;
     background-color: gray;
   }
-  
+
+  .img_genre_page_genre:hover {
+    width: 218px;
+    border: 8px groove aqua;
+    transition: 0.4s;
+  }
+
   .img_gallery_page_genre {
     display: inline-block;
     width: 225px;
@@ -583,8 +589,6 @@ li {
 
     justify-content: space-around;
   }
-  
-
 }
 
 @media (min-width: 1024px) {
@@ -731,7 +735,7 @@ li {
     border-radius: 5%;
     background-color: gray;
   }
-  
+
   .img_progress_book {
     display: inline-block;
     width: 150px;
@@ -741,13 +745,36 @@ li {
     justify-content: space-around;
   }
 
+  @keyframes genre_road {
+    from {
+      position: relative;
+    }
+    25% {
+      top: -1px;
+      left: -7px;
+    }
+    50% {
+      top: -2px;
+      left: -15px;
+    }
+    75% {
+      top: -3px;
+      left: -26px;
+    }
+    to {
+      top: -4px;
+      left: -30px;
+    }
+  }
+
   .img_genre:hover {
     position: relative;
     width: 364px;
     height: 184px;
     border: 3px inset aqua;
-    top: -4px;
-    left: -30px;
+    animation: genre_road 0.5s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
   }
 
   .img_genre_book:hover {
@@ -765,8 +792,9 @@ li {
     border-radius: 5%;
     border: 3px inset aqua;
     background-color: gray;
+    transition: 0.4s;
   }
-  
+
   .img_progress_book:hover {
     display: inline-block;
     width: 194px;
@@ -775,6 +803,7 @@ li {
     border: 3px inset aqua;
     background-color: gray;
     justify-content: space-around;
+    transition: 0.4s;
   }
 
   .gallery_info {
@@ -803,7 +832,7 @@ li {
   }
 
   .contact_text {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
     color: lavender;
     margin: 50px;
@@ -811,7 +840,7 @@ li {
     line-height: 3rem;
   }
 
-  .contact_mail{
+  .contact_mail {
     font-size: 1.5rem;
   }
 
@@ -820,14 +849,14 @@ li {
     line-height: 2rem;
   }
 
-  .foot_contact_mail{
+  .foot_contact_mail {
     font-size: 1.2rem;
   }
 
   /* страницы изображений */
 
   .new_page_img {
-    width: 70vw;
+    width: 60vw;
     /* height: 80vh; */
     padding: 2% 5% 2% 5%;
     border: 4px groove aqua;
@@ -836,8 +865,16 @@ li {
 
   .page_img {
     border: 4px groove aqua;
-    width: 70vw;
+    width: 60vw;
     /* height: 80vh; */
+  }
+
+  .new_page_img_semi_book {
+    width: 40vw;
+    /* height: 85vh; */
+    padding: 2% 5% 2% 5%;
+    border: 4px groove aqua;
+    margin-left: 25%;
   }
 
   .new_page_img_book {
@@ -846,6 +883,12 @@ li {
     padding: 2% 5% 2% 5%;
     border: 4px groove aqua;
     margin-left: 30%;
+  }
+
+  .page_img_semi_book {
+    border: 4px groove aqua;
+    width: 40vw;
+    /* height: 85vh; */
   }
 
   .page_img_book {
@@ -860,13 +903,19 @@ li {
     width: 300px;
   }
 
-  .img_genre_page_genre{
+  .img_genre_page_genre {
     display: inline-block;
-    width:  250px;
+    width: 250px;
     border-radius: 5%;
     background-color: gray;
   }
-  
+
+  .img_genre_page_genre:hover {
+    width: 245px;
+    border: 3px solid aqua;
+    transition: 0.4s;
+  }
+
   .img_gallery_page_genre {
     display: inline-block;
     width: 250px;
@@ -874,7 +923,6 @@ li {
     /* border-color: red; */
     background-color: none;
   }
-
 }
 
 @media (min-width: 1400px) {
@@ -885,21 +933,21 @@ li {
   }
 
   .new_page_img {
-    width: 60vw;
+    width: 45vw;
     /* height: 80vh; */
     padding: 2% 5% 2% 5%;
     border: 4px groove aqua;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .page_img {
     border: 4px groove aqua;
-    width: 60vw;
+    width: 45vw;
     /* height: 80vh; */
   }
 
   .new_page_img_book {
-    width: 25vw;
+    width: 30vw;
     /* height: 85vh; */
     padding: 2% 5% 2% 5%;
     border: 4px groove aqua;
@@ -908,7 +956,7 @@ li {
 
   .page_img_book {
     border: 4px groove aqua;
-    width: 25vw;
+    width: 30vw;
     /* height: 85vh; */
   }
 }
